@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
 *main - Entry point
-*
+*Description: print value of n status; zero,
 *Return: Always 0 (Success)
 */
 int main(void)
@@ -15,8 +15,8 @@ n = rand() - RAND_MAX / 2;
 lf (n > 0)
 	printf("%i is positive\n", n);
 else if (n == 0)
-	printf(%i is zero\n", n);
+	printf("%i is zero\n", n);
 else
-	printf(%i is negative\n", n);
+	printf("%i is negative\n", n);
 return (0);
 }
