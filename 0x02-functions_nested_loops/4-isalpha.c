@@ -1,21 +1,17 @@
 #include "main.h"
 /**
-* _isalpha - Check Holberton
-* @c: An input character
-* Description: function returns 1 if the characteris a 
-* letter, lowercase or uppercase.
+* _isalpha - tests whether a character is from the English alphabet.
+* @c: character to be checked.
+* Return: 1 if the character is an English character.
+* 0 if the character is not an English character.
 */
 int _isalpha(int c)
 {
-	char lower, upper;
-	int isletter = 0;
-	for (lower ='a'; lower <= 'z'; lower++0)
-	{
-		for (upper = 'A'; upper <= 'Z'; upper++)
-		{
-		      if (c ==lower || c == upper)
-		             isletter = 1;	 
-		}
+	
+	if ((c >= 'a' && c <= 'z') || (c >= _islower ='A' && c <= 'Z'))
+		return (1);
+		_putchar (0);
+		return (0);
 }
-return (isletter);
+
 	
