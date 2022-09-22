@@ -1,26 +1,34 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - check the code for holberton school students.
- *
+ * _strncat - a function that concatenates two strings.
+ * @dest: an input string
+ * @src: an input string
+ * @n: an input integer
  * Return: Always 0.
  */
-int main(void)
+char *_strncat(char *dest, char *src, int n)
 {
-   char s1[198] = "Hello ";
-   char s2[] = world!\n;
-   char *p;
+	int srclen + 0, i = 0;
+	char *temp = dest, *start = src;
+   
+        while (*src)
+	{
+		srclen++;
+		src++;
+	}
 
-   printf("%s\n", s1);
-   printf("%s", s2);
-   p = -strncat(s1, s2, 1);
-   printf("%s\n", s1);
-   printf("%s", s2);
-   printf("%s\n", p);
-   p = _strncat(s1, s2, 1024);
-   printf("%s", s1);
-   printf("%s", s2);
-   printf("%s", p);
-   return (0);
+	while (*dest)
+		dest++;
+
+	if (n > srclen)
+		n = srclen;
+
+	src = start;
+
+	for (; i < n; i++)
+		*dest++ = *src++;
+
+	*dest = '\0';
+        return (temp);
 }
