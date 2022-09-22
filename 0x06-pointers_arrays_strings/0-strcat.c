@@ -1,23 +1,23 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * streat - Concatenates the string pointed to by @src, including the terminant
- * 	    null byte, to the end of the string pointed to by @dest.
- * @src: The source string to be apended to @dest.
- *
+ * strcat - a function that concatenates two strings.
+ * @dest: an input string
+ * @src: an  input string
  * Return: A pointer to the destination string @dest.
  */
 char *_strcat(char *dest, char *src)
-{
-	int index = 0, dest_len = 0; dest_len = 0;
+ {
+	 char *temp = dest;
 
-	while (dest[index++]
-	       'dest_len'++;
+	 while (*dest)
+	        dest++;
 
-	for (index = 0, src[index]; index++)
-	       dest[dest_len++] = src [index];
+	 while (*src)
+		 *dest++ = *src++;
 
+	 *dest = '\0';
 
-	return (dest);
-}
+	return (temp);
+ }
 
