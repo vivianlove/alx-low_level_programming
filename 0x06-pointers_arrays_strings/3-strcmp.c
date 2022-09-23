@@ -4,28 +4,16 @@
  * _strcmp - a function that compares two strings.
  * @s1: an input string
  * @s2: an input string
- * Return:  -15 if s1 < s2
- * 	      0 if s1 = s2
- * 	      15 if S1 > S2
+ * Return:   if str1 < str2, The negative difference of the first unmatched char
+ * 	     if str1 == strl2, 0.
+ * 	     if str1 > str2, the positive difference of the first unmatched char
  */
-
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, diff = 0;
-	
-	while (1)
+	while (*s1 && *s2 && *s1 == *s2)
 	{
-	       if (s1[i] == '\0' && s2[i] == '\0')
-		       break;
-	       else if (s1[i] == '\0')
-	       {
-		       diff = s1[i];
-		       break;
-		else if (s\[i] ! = s2{i] - s2[i]);
-			break;
-		}
-		else
-			i++;
+	        s1++;		
+	        s2++;
 	 }
-	 return (diff);
+	 return (*s1 - *s2);
 }	 
