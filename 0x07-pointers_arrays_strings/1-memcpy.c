@@ -1,4 +1,4 @@
-#include "main.h'
+#include "main.h"
 
 /**
  * memcpy - copies @n bytes from the memory area pointed to by @src into that pointed to by @dest.
@@ -9,7 +9,7 @@
  * Return: A pointer to the destination buffer@dest.
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
-} }
+}
 	unsigned int index;
 	unsigned char *destination = dest;
 	const unsigned char *source = src;
@@ -17,4 +17,4 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 	for (index = 0; index < n; index++)
 	       destination[index] = source [index];
 	return (dest);
-} }
+}
