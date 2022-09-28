@@ -2,13 +2,10 @@
 #define MAIN_H
 
 /**
- * file main.h
- * Auth: vivian (vivian ezeoru)
- * description: Header file containing prototypes for all functions 
- *       used in the 0x06 - pointers_array_strings directory.
+ 
+ * void prototypes()
+ * int prototypes()
  */
-
-#include <stddef.h>
 
 int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
@@ -19,3 +16,5 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
+
+#endif /*MAIN_H*/
