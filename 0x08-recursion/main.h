@@ -2,10 +2,9 @@
 #define MAIN_H
 
 /**
- * file: main.h(vivian)
+ * file: main.h (vivian)
  * Auth: no
  * Description: Header file containing prototypes for all functions
- *
  */
 
 int _putchar(char c);
