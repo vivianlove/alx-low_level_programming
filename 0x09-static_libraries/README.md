@@ -1,0 +1,1 @@
+readme.md Static libraries
