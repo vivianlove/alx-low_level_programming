@@ -1,22 +1,20 @@
 #include "main.h"
- /**
- *  -memset - fills the first n bytes of the memory area
- *          pointed to by @s with the constant byte @c.
- *  @s: A pointer to the memory area to be filled.
- *  @c: The character to fill the memory area with.
- *  @n: The number of bytes to filled.
- *  description_memset: over there
- *
- *  Return: A pointer to be filled memory area@s.
- *
- */
-char *_memset(char *s, char b, unsigned int n);
-{
-       char *start = s;
+/**
+*_memset - The _memset() function fills
+* the first n bytes of the memory area
+* pointed to by s with the constant byte b
+*@s:target
+*@b: constant byte
+*@n:number of byte
+*Return: returns new value of target
+*/
 
-       while (n--)
-       {
-             *s = b;
-             s++;
-       return (start);
+char *_memset(char *s, char b, unsigned int n)
+{
+	while (n)
+	{
+		s[n - 1] = b;
+		n--;
+	}
+	return (s);
 }
