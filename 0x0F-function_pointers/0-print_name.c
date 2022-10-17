@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print _name - prints a name
+ * print_name - prints a name
  * @name:string
  * @f: Pointer to the printing function
  *
@@ -10,6 +10,6 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-if (name != NULL && F != NULL)
+if (name != NULL && f != NULL)
 f(name);
 }
