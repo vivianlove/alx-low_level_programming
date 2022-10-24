@@ -3,7 +3,6 @@
  /**
   * free_list - Frees a list_t
   * @head: A pointer to the list_t
-  *
   * Return:void
   */
 void free_list(list_t *head)
