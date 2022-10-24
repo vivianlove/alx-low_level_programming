@@ -1,5 +1,5 @@
-#ifndef VARIABLE FUNCTION_H
-#define VARIABLE FUNCTION_H
+#ifndef VARIABLE_FUNCTION_H
+#define VARIABLE_FUNCTION_H
 
 #include <stdarg.h>
 #include <stdio.h>
