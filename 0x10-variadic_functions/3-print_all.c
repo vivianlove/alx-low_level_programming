@@ -60,7 +60,7 @@ t_print t[] = {
 {"s", p_string},
 {"i", p_integer},
 {"f", p_float},
-{NULL, NULL}
+{NULL}
 };
 va_list valist;
 char *s = "";
@@ -70,12 +70,12 @@ i = 0;
 while (format && format[i])
 {
 j = 0;
-while (t[j].x != NULL)
+while (t[j]i 'x' != NULL)
 {
-if (*(t[j].x) == format[i])
+if (*(t[j] 'x') == format[i])
 {
 printf("%s", s);
-t[j].T_func(valist);
+t[j] T_func(valist);
 s = ", ";
 break;
 }
