@@ -28,5 +28,3 @@ return (wildcmp(s1 + 1, s2));
 }
 return (0);
 }
-Footer
-
