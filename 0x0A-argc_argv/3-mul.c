@@ -24,5 +24,3 @@ printf("%d\n", x);
 }
 return (0);
 }
-Footer
-
